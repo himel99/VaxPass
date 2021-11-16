@@ -33,6 +33,26 @@
         android:textSize="25dp"
         android:textStyle="bold" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvVaccines"
+        android:layout_below="@id/tvStatus"
+        android:text="Vaccines"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvVaccines"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp" />
 
 
 
