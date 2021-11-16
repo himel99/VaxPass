@@ -2,6 +2,7 @@ package cosc490.morgan.vaxpass;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -26,12 +27,22 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(username.getText().toString().equals("admin") && password.getText().toString().equals("admin")){
-                    //correct
+                    //show toast for successful login
                     Toast.makeText(MainActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
+                    //call method to open activity for the home page
+                    openHomePage();
                 }else{
+                    //toast for login failure
                     Toast.makeText(MainActivity.this, "Login FAILED!", Toast.LENGTH_SHORT).show();
                 }
             }
         });
+    }
+
+    public void openHomePage(){
+        //create new intent
+        Intent intent = new Intent(this, HomeActivity.class);
+        //start activity with that intent
+        startActivity(intent);
     }
 }
