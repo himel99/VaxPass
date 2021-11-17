@@ -8,6 +8,7 @@ public class NewModified extends AppCompatActivity {
 
     int first = 1;
     int last = 0;
+    int changedVar = 082;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
