@@ -15,7 +15,7 @@ public class NewModified extends AppCompatActivity {
 
 
     }
-
+    // Applying getter and setter methods
     public int getFirst() {
         return first;
     }
